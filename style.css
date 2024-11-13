@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+/* UNIVERSAL SELECTOR STYLING STARTS HERE */
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+/* BODY STYLING STARTS HERE */
+body {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-image: url("https://png.pngtree.com/background/20230611/original/pngtree-the-ancient-civilization-that-is-egypt-picture-image_3147096.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ font-family: 'Caesar Dressing';
+ font-weight: bold;
+ color: rgb(255, 255, 255);
+ text-align: center;
+ position: relative;
+ min-height: 100vh;
+}
+
+.main-header {
+ display: block;
+ position: absolute;
+ top: 20px;
+ font-weight: bold;
+ text-transform: uppercase;
+ font-size: 2.2em;
+ padding: 10px;
+}
+
+/* DIV CONTAINER STYLING STARTS HERE */
+.container {
+ background-image: url("https://www.freepik.com/premium-ai-image/explore-captivating-tales-ancient-egypt-with-this-intricate-seamless-pattern-authentic-hieroglyphs-each-symbol-tells-story-past-transporting-you-time-pharaohs_153342681.html");
+ width: 100%;
+ max-width: 50000px;
+ padding: 2em 4em;
+ color: white;
+ border-radius: 35px;
+ margin: 6em 2em;
+}
+
+.container h1 {
+ margin-top: 2px;
+ margin-bottom: 10px;
+ text-transform: uppercase;
+ font-weight: bold;
+ letter-spacing: 1px;
+ font-size: 2.2em;
+}
+
+.container h2 {
+ font-size: 2.2em;
+ margin-top: 0;
+ margin-bottom: 20px;
+}
+
+.container button {
+ border: none;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ background-image: url("https://www.shutterstock.com/image-vector/golden-ancient-egyptian-hieroglyphs-alphabet-600w-2481123831.jpg"); /* Add the image URL */
+ background-size: cover; /* Ensures the image covers the button */
+ background-repeat: no-repeat; /* Prevents the image from repeating */
+ background-position: center; color: rgb(255, 255, 255);
+ text-transform: lowercase;
+ width: 250px;
+ margin: auto;
+ display: flex;
+ justify-content: center;
+ margin-bottom: 6px;
+ margin-top: 6px;
+ border-radius: 5px;
+ font-family: 'Caesar Dressing';
+ font-weight: bold;
+ letter-spacing: 1px;
+ font-size: 20px;
+}
+
+/* HOVER BUTTON STYLING STARTS HERE */
+.container button:hover {
+ background-color: rgb(126, 91, 5);
+ color: white;
+ transition: 0.3s ease-in-out;
+}
+
+/* PARAGRAPH STYLING STARTS HERE */
+.container p {
+ color: white;
+ font-size: 1.2em;
+ letter-spacing: 1px;
+}
+
+/* MEDIA QUERY STYLING STARTS HERE */
+@media screen and (max-width: 660px) {
+ .main-header {
+  font-size: 2em;
+ }
+}
+
+@media screen and (max-width: 580px) {
+ .main-header {
+  font-size: 22px;
+  padding: 10px;
+ }
+
+ .container h1 {
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 60px;
+ }
+
+ .container h2 {
+  font-size: 30px;
+ }
+
+ .container button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 200px;
+  font-size: 40px;
+ }
+
+ .container p {
+  font-size: 20px;
+ }
+}
+
+@media screen and (max-width: 360px) {
+ .main-header {
+  font-size: 1.5em;
+  padding: 10px;
+ }
+
+ .container h1 {
+  letter-spacing: 1px;
+  font-size: 22px;
+ }
+
+ .container h2 {
+  font-size: 20px;
+ }
+
+ .container button {
+  width: 120px;
+  font-size: 13px;
+ }
+
+ .container p {
+  font-size: 10px;
+ }
+}
